@@ -3,10 +3,8 @@ export class Character {
 public name: string = ""
 public health: number = 100
 constructor(name: string = "", health: number = 100) {
-
 this.name = name
 this.health = health
-
 }
 
 getName() {
@@ -18,9 +16,8 @@ return this.health
 }
 
 receiveDamage(damage: number = 0){
-
 const current = this.health
 this.health = current - damage
-
 }
+
 }

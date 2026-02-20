@@ -1,23 +1,20 @@
 import { Character } from "./character";
 
 export class Warrior extends Character {
-
-public weapon: string = ""
-constructor(name: string = "", weapon: string = "", health: number = 100) {
-
+  
+weapon: string = "";
+constructor(name: string, weapon: string, health: number = 100) {
 super(name, health);
 this.weapon = weapon;
-
 }
 
-getWeapon(){
-return this.weapon
+getWeapon(): string {
+return this.weapon;
 }
 
-receiveDamage(damage: number = 0) {
-
-const current = this.health
-this.health = current - (damage - damage*0.1)
+receiveDamage(damage: number) {
+const now = this.health;
+this.health = now - (damage - damage * 0.1);
 
 }
 }
