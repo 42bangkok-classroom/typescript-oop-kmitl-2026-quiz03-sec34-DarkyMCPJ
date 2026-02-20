@@ -1,13 +1,13 @@
 export class Car {
 
-brand: string;
-model: string;
+brand: string = "";
+model: string = "";
 
 start(): void{
 console.log(`${this.brand} ${this.model} is starting...`);
 }
 
-acceraate(): void{
+accelerate(): void{
 console.log(`${this.brand} ${this.model} is accelerating...`);
 }
 
