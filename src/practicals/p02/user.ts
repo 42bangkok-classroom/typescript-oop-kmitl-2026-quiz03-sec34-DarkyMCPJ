@@ -23,7 +23,7 @@ return this.age;
 }
 
 getFullName(): string {
-return `${this.setFirstname} ${this.setLastname}`;
+return `${this.firstName} ${this.lastName}`;
 }
 
 }
